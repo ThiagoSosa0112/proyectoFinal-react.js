@@ -1,0 +1,14 @@
+p{
+    text-align: center;  
+}
+.product-list-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px; 
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px; 
+    width: 100%;
+}
