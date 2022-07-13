@@ -3,12 +3,12 @@ import './Item.css';
 import '../../container/ItemListContainer';
 import ItemCount from '../ItemCount';  
 import { useNavigate } from 'react-router-dom';
-const Item = ({titulo, img, price, stock, description}) => {
+const Item = ({titulo, img, price, stock, description, id}) => {
   
   const navigate = useNavigate()
 
   const handleDetail = () =>{
-    navigate (`/Item/${titulo}`)
+    navigate (`/Item/${id}`)
   }
     return (  
       <div className='product-card' onClick={handleDetail}>
