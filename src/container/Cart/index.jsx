@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Shop } from '../../context/ShopProvider'
+import { Shop } from '../../context/ShopProvide'
 
 const Cart = () => {
   const {cart, removeItem, clearCart} = useContext(Shop);
@@ -7,16 +7,15 @@ const Cart = () => {
   console.log(cart);
   return (
     <div>
-      
-      <ul>
-        {cart.map(product => {
-          return <li key={product.id}>{product.title} <img src={product.image} width='80px' alt={product.title}/></li>
-        })}
-     </ul>
-    <button onClick={removeItem}>Remove Item</button>
-    <button onClick={clearCart}>Vaciar carrito</button>
-    </div>
-  )
+
+    <ul>
+      {cart.map(product => {
+        return <li key={product.id}>{product.title} <img src={product.image} width='80px' alt={product.title}/></li>
+      })}
+      <button onClick={clearCart}>Vaciar carrito</button>
+    </ul>
+      </div>
+)
 }
 
 export default Cart
