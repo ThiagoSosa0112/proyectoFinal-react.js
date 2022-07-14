@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react'
+import { Shop } from '../../context/ShopProvider'
 
+const Cart = () => {
+  const {cart, removeItem} = useContext(Shop);
 
-const Cart = () =>{
-
-    return(
-        <div>
-            <h1>Este es mi Cart</h1>
-        </div>
-    )
+  console.log(cart);
+  return (
+    <div>
+      
+      <ul>
+        {cart.map(product => {
+          return <li key={product.id}>{product.title} <img src={product.image} width='80px' alt={product.title}/></li>
+        })}
+     </ul>
+    <button onClick={removeItem}>Remove Item</button>
+    </div>
+  )
 }
 
-export default Cart;
+export default Cart
