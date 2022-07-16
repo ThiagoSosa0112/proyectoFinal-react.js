@@ -3,7 +3,7 @@ import './Item.css';
 import '../../container/ItemListContainer';
 import ItemCount from '../ItemCount';  
 import { useNavigate } from 'react-router-dom';
-const Item = ({titulo, img, price, stock, description, id}) => {
+const Item = ({titulo, img, price, description, id}) => {
   
   const navigate = useNavigate()
 
@@ -23,7 +23,6 @@ const Item = ({titulo, img, price, stock, description, id}) => {
       </div>
       <div className='product-bottom-details'></div>
       <div className='product-price'>${price}</div>
-    {/*   <ItemCount stock={stock} initial={1} /> */}
   </div>
     )
   }

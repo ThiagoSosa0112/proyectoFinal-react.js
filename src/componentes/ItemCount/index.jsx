@@ -21,7 +21,7 @@ import '../ItemCount/ItemCount.css';
           <span className='count'>{value}</span>
           <button className='count-container__button' onClick={() => setValue(value => value+1)}>+</button>
         </div>
-          <button className='button-carrito' onClick={handleConfirm}>Confirm</button>
+          <button className='button-carrito' onClick={handleConfirm}>Add to cart</button>
       </div>
 
     )

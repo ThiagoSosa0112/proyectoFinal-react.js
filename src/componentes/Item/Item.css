@@ -5,7 +5,7 @@
   margin: 0;
 }
 .product-card{
-  width: 380px;
+  width: 450px;
   position: relative;
   box-shadow: 0 2px 7px #dfddfd;
   margin: 50px auto;
@@ -27,8 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
-  padding: 50px;
+  height: 400px;
   background: #f0f0f0;
 }
 .product-tumb img{
