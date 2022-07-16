@@ -7,7 +7,7 @@ const NavBar=()=>{
         <ul className='menu'>
             <li className='links'><Link to='/'>Home</Link></li>
             <li className='links'><a href="#"> Contact </a></li>
-            <li className='links'><Link to='/category/productos'>Productos</Link></li>
+            <li className='links'><Link to='/category/productos'>Products</Link></li>
             <li className='links'><a href="#"> Galery </a></li>
             <CartWidget/>
         </ul>
