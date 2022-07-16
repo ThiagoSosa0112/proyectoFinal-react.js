@@ -32,8 +32,8 @@
     background: #f0f0f0;
 }
 .product-tumb img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 100rem;
+    height: 100rem;
 }
 .product-details{
     padding: 30px;

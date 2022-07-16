@@ -36,7 +36,7 @@ const ItemDetail = ({product}) => {
                 <p>{product.description}</p>
             </div>
             <div className='product-bottom-details'></div>
-            <div className='product-price'>${product.price}</div>
+            <div className='product-price'>Price: ${product.price}</div>
             {!qtyAdded?
             <ItemCount onConfirm = {handleConfirm} maxQuantity= {product.stock}/>
             :
