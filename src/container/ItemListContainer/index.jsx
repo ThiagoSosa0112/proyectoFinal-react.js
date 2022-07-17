@@ -13,7 +13,7 @@ const  ItemListContainer=({greeting})=>{
     const getProducts = new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve(productList);
-        }, 2000);
+        }, 4000);
       });
     const getProductos= async() => {
             try {
@@ -28,12 +28,14 @@ const  ItemListContainer=({greeting})=>{
          
    
     useEffect(() => {
+      setTimeout(()=>{
         getProductos();
+      }, 4000)
       }, []);
       
     return(
     <div>
-    {productos? <ItemList products={productos}/> : <h1>Cargando productos...</h1> }
+    {productos? <ItemList products={productos}/> : <div className='position-spinner'> <h3>Loading...</h3> <div className='spinner'></div></div> }
     </div>
     )
 }    
