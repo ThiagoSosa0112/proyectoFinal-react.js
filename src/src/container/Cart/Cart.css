@@ -1,0 +1,20 @@
+.image-table{
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    place-items: center;
+}
+ 
+.table{
+    gap: 40px;
+    width: 100%;
+}
+.title{
+   text-align: center; 
+}
+.item-table{
+    text-align: center;    
+}
+.item-table img{
+   margin-left: 185px;
+}
