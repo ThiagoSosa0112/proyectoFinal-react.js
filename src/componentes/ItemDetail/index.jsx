@@ -6,8 +6,9 @@ import { Shop } from '../../context/ShopProvide';
 
 const ItemDetail = ({product}) => {
     console.log(product);
-    product.stock  = 10;
+    product.stock = 10;
     const navigate = useNavigate();
+
 
     const {addItem} = useContext(Shop)
 
